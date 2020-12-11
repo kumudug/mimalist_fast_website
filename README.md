@@ -14,14 +14,14 @@
 1. My first attempt was to start with a boilerplate. I tried with [Material Design](https://material.io/design)
    - I came across so many compatibility issues with their provided boilerplates
    - I couldn't use the latest versions of the modules I wanted
-   - There were good examples to incoprate into frameworks but I wanted a minimalist approach
+   - There were good examples to incorporate into frameworks but I wanted a minimalist approach
    
 2. Start from scratch
    - I decided to start from scratch. 
    
 ## Lets begin
 
-### Descisions
+### Decisions
 
 1. Module bundler loader [webpack](https://webpack.js.org/concepts/)
 2. JS compiler for compatibility [Babel](https://babeljs.io/)
@@ -33,6 +33,6 @@ Lets begin...
 
 Everything eventually gets outdated. At the time of creation the versions are
 
-* OS [Arch Linux x86_64 with kernal 5.9.13-arch1-1]
+* OS [Arch Linux x86_64 with kernel 5.9.13-arch1-1]
 * Node v15.4.0
 * npm 6.14.8
