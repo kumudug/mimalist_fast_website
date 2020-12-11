@@ -4,6 +4,7 @@
 
 * I wanted a simple website as the root of my domain. This needs to load as fast as it can without any bloat. 
 * The purpose of this root website is to direct the users into my various projects and articles
+* This will be hosted on my home server. So every byte, every style, every transformation counts.
 * Needs to be mobile first and fully responsive
 * Modern design
 * Should work reasonably well with at least 80% of current web browser versions [caniuse](https://caniuse.com/)
@@ -27,3 +28,11 @@
 3. CSS preprocessor [Dart Sass](https://sass-lang.com/dart-sass)
 
 Lets begin...
+
+### Versions
+
+Everything eventually gets outdated. At the time of creation the versions are
+
+* OS [Arch Linux x86_64 with kernal 5.9.13-arch1-1]
+* Node v15.4.0
+* npm 6.14.8
