@@ -1,4 +1,4 @@
-# Mimalistic Fast Website
+# Minimalistic Fast Website
 
 ## Problem Statement
 
