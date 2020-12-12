@@ -1,6 +1,9 @@
 import _ from 'lodash';
 import './style.css';
 import Icon from './icon.png';
+import DataXml from './data.xml';
+import DataJson from './data.json';
+import Notes from './data.csv';
 
 function component() {
     const element = document.createElement('div');
@@ -14,6 +17,10 @@ function component() {
     myIcon.src = Icon;
 
     element.appendChild(myIcon);
+
+    console.log(DataXml);
+    console.log(DataJson);
+    console.log(Notes);
 
     return element;
 }
