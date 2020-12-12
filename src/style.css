@@ -7,5 +7,5 @@
 .hello {
   color: red;
   font-family: 'Langar';
-  background: url("./icon.png");
+  /* background: url("./icon.png"); */
 }
