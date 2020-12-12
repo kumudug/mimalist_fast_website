@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'Langar';
-  src: url('./Langar-Regular.ttf') format('ttf');
+  src: url('./Langar-Regular.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
 }
 .hello {
   color: red;
-  font-family: 'Langar', cursive;
+  font-family: 'Langar';
   background: url("./icon.png");
 }
