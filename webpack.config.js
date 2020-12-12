@@ -4,6 +4,8 @@ const yaml = require('yamljs');
 const json5 = require('json5');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const { WebpackManifestPlugin } = require('webpack-manifest-plugin');
+const options = {};
 
 module.exports = {
   entry: {
@@ -12,6 +14,7 @@ module.exports = {
   },
   plugins: [
     new CleanWebpackPlugin(),
+    new WebpackManifestPlugin(options),
     new HtmlWebpackPlugin({
       title: 'Output Management',
     }),
