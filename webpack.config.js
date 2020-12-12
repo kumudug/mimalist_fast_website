@@ -3,6 +3,7 @@ const toml = require('toml');
 const yaml = require('yamljs');
 const json5 = require('json5');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
   entry: {
@@ -10,6 +11,7 @@ module.exports = {
     print: './src/print.js',
   },
   plugins: [
+    new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
       title: 'Output Management',
     }),
