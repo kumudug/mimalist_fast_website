@@ -5,6 +5,7 @@
   "private": true,
   "scripts": {
     "build": "webpack",
+    "start": "webpack serve",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -28,6 +29,7 @@
     "toml": "^3.0.0",
     "webpack": "^5.10.1",
     "webpack-cli": "^4.2.0",
+    "webpack-dev-server": "^3.11.0",
     "webpack-manifest-plugin": "^3.0.0",
     "webpack-nano": "^1.1.1",
     "xml-loader": "^1.2.1",
