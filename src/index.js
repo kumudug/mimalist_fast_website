@@ -1,16 +1,10 @@
+/*eslint no-unused-vars: ["error", { "varsIgnorePattern": "mdc" }]*/
+
 import './app.scss';
-console.log("empty");
 
-let testFunc = (ab) => {
-    console.log('test func'+ ab);
-}
+import { MDCRipple } from '@material/ripple';
 
-let testFunc2 = (ab, cd) => {
-    console.log('test func'+ ab);
-    testFunc(cd);
-    //test comment1
-}
+const mdcButtonRipple = new MDCRipple(document.querySelector('.mdc-button'));
 
-//test comment 2
-testFunc("adad");
-testFunc2("add", "dde");
+
+

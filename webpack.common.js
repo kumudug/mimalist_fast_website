@@ -23,10 +23,7 @@ module.exports = {
       filename: '[name].[contenthash].css',
     }),
     new ESLintPlugin({
-      emitError: true,
-      emitWarning: true,
-      failOnError: true,
-      outputReport: true
+      exclude: 'node_modules'
     })
   ],
   output: {
@@ -41,6 +38,21 @@ module.exports = {
           MiniCssExtractPlugin.loader,
           { loader: 'css-loader' },
           {
+            loader: 'postcss-loader',
+            options: {
+              postcssOptions: {
+                plugins: [
+                  [
+                    "autoprefixer",
+                    {
+                      // Options
+                    },
+                  ],
+                ],
+              },
+            }
+          },
+          {
             loader: 'sass-loader',
             options: {
               // Prefer Dart Sass
@@ -54,6 +66,16 @@ module.exports = {
             },
           },
         ]
+      },
+      {
+        test: /\.m?js$/,
+        exclude: /(node_modules)/,
+        use: {
+          loader: 'babel-loader',
+          options: {
+            presets: ['@babel/preset-env']
+          }
+        }
       }
     ]
   }
