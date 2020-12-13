@@ -3,25 +3,30 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const { WebpackManifestPlugin } = require('webpack-manifest-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const options = {};
+const ESLintPlugin = require('eslint-webpack-plugin');
 
 module.exports = {
   entry: {
     index: './src/index.js',
   },
-  devtool: 'inline-source-map',
   devServer: {
     contentBase: './dist',
   },
   plugins: [
     new CleanWebpackPlugin(),
-    new WebpackManifestPlugin(options),
+    new WebpackManifestPlugin({}),
     new HtmlWebpackPlugin({
       title: 'coding-mayhem',
       template: 'src/index.html'
     }),
     new MiniCssExtractPlugin({
       filename: '[name].[contenthash].css',
+    }),
+    new ESLintPlugin({
+      emitError: true,
+      emitWarning: true,
+      failOnError: true,
+      outputReport: true
     })
   ],
   output: {
