@@ -1,8 +1,20 @@
-@use "@material/ripple";
-@use "@material/button";
+@use "@material/icon-button";
+@use "@material/top-app-bar/mdc-top-app-bar";
 
-@include button.core-styles;
+@include icon-button.core-styles;
 
 body {
   color: blue;
 }
+
+// .container {
+//   display: grid;
+//   grid-template-rows: auto 2rem 1fr 2rem;
+//   grid-template-areas:
+//     "header"
+//     "search"
+//     "body"
+//     "footer";
+//   height: 100vh;
+// }
+

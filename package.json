@@ -4,7 +4,8 @@
   "description": "## Problem Statement",
   "private": true,
   "scripts": {
-    "build": "webpack --config webpack.prod.js",
+    "build:prod": "webpack --config webpack.prod.js",
+    "build:dev": "webpack --config webpack.dev.js",
     "start": "webpack serve --config webpack.dev.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -46,6 +47,8 @@
   },
   "dependencies": {
     "@material/button": "^8.0.0",
-    "@material/ripple": "^8.0.0"
+    "@material/icon-button": "^8.0.0",
+    "@material/ripple": "^8.0.0",
+    "@material/top-app-bar": "^8.0.0"
   }
 }

@@ -2,9 +2,16 @@
 
 import './app.scss';
 
-import { MDCRipple } from '@material/ripple';
+import {MDCTopAppBar} from '@material/top-app-bar';
+import {MDCRipple} from '@material/ripple';
 
-const mdcButtonRipple = new MDCRipple(document.querySelector('.mdc-button'));
+const iconButtonRipple = new MDCRipple(document.querySelector('.mdc-icon-button'));
+iconButtonRipple.unbounded = true;
+
+const topAppBarElement = document.querySelector('.mdc-top-app-bar');
+const mdcTopAppBar = new MDCTopAppBar(topAppBarElement);
+
+
 
 
 
