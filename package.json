@@ -36,5 +36,7 @@
     "webpack-merge": "^5.7.0",
     "webpack-nano": "^1.1.1"
   },
-  "dependencies": {}
+  "dependencies": {
+    "@material/button": "^8.0.0"
+  }
 }

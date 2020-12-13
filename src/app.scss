@@ -1,3 +1,7 @@
+@use "@material/button";
+
+@include button.core-styles;
+
 body {
   color: blue;
 }
