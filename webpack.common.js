@@ -15,12 +15,12 @@ module.exports = {
   plugins: [
     new CleanWebpackPlugin(),
     new WebpackManifestPlugin({}),
-    // new HtmlWebpackPlugin({
-    //   title: 'coding-mayhem',
-    //   template: 'src/index.html'
-    // }),
+    new HtmlWebpackPlugin({
+      title: 'coding-mayhem',
+      template: 'src/index.html'
+    }),
     new MiniCssExtractPlugin({
-      filename: '[name].css',
+      filename: '[name].[contenthash].css',
     }),
     new ESLintPlugin({
       exclude: 'node_modules'
@@ -38,20 +38,20 @@ module.exports = {
         // type: 'asset/resource',
         use: 'file-loader'
       },
-      {
-        test: /\.html$/i,
-        use: [
-          'file-loader?name=[name].[ext]',
-          'extract-loader',
-          {
-            loader: 'html-loader',
-            options: {
-              //attributes: true,
-              //attrs: ["img:src", "link:href"]
-            },
-          }
-        ],
-      },
+      // {
+      //   test: /\.html$/i,
+      //   use: [
+      //     'file-loader?name=[name].[ext]',
+      //     'extract-loader',
+      //     {
+      //       loader: 'html-loader',
+      //       options: {
+      //         //attributes: true,
+      //         //attrs: ["img:src", "link:href"]
+      //       },
+      //     }
+      //   ],
+      // },
       {
         test: /\.(woff|woff2|eot|ttf|otf)$/i,
         type: 'asset/resource',

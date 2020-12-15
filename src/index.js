@@ -13,11 +13,11 @@ const mdcTopAppBar = new MDCTopAppBar(topAppBarElement);
 
 
 
-//import mdcIcon from './res/icon.png';
+import mdcIcon from './res/icon.png';
 
 import './app.scss';
 
-import mdcHtml from './index.html';
+//import mdcHtml from './index.html';
 
 
 
