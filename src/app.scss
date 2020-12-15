@@ -3,8 +3,16 @@
 
 @include icon-button.core-styles;
 
+@font-face {
+  font-family: 'Langar';
+  src: url('./res/Langar-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
 body {
   color: blue;
+  font-family: 'Langar';
 }
 
 // .container {

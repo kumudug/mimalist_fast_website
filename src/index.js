@@ -1,6 +1,6 @@
 /*eslint no-unused-vars: ["error", { "varsIgnorePattern": "mdc" }]*/
 
-import './app.scss';
+
 
 import {MDCTopAppBar} from '@material/top-app-bar';
 import {MDCRipple} from '@material/ripple';
@@ -11,6 +11,13 @@ iconButtonRipple.unbounded = true;
 const topAppBarElement = document.querySelector('.mdc-top-app-bar');
 const mdcTopAppBar = new MDCTopAppBar(topAppBarElement);
 
+
+
+//import mdcIcon from './res/icon.png';
+
+import './app.scss';
+
+import mdcHtml from './index.html';
 
 
 
