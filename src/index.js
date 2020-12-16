@@ -15,6 +15,7 @@ import mdcIcon from './res/icon.png';
 
 import './app.scss';
 
+//import mdcSecond from './second_page';
 
-
+//import mdcHtml from './second_page.html';
 
