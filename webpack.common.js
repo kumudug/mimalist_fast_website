@@ -35,7 +35,6 @@ module.exports = {
     rules: [
       {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
-        //type: 'asset/resource',
         use: [
           {
             loader: 'file-loader',
@@ -45,20 +44,6 @@ module.exports = {
           }
         ]
       },
-      // {
-      //   test: /\.html$/i,
-      //   use: [
-      //     'file-loader?name=[name].[ext]',
-      //     'extract-loader',
-      //     {
-      //       loader: 'html-loader',
-      //       options: {
-      //         //attributes: true,
-      //         //attrs: ["img:src", "link:href"]
-      //       },
-      //     }
-      //   ],
-      // },
       {
         test: /\.(woff|woff2|eot|ttf|otf)$/i,
         type: 'asset/resource',
@@ -66,9 +51,7 @@ module.exports = {
       {
         test: /\.s[ac]ss$/i,
         use: [
-          //'file-loader',
           MiniCssExtractPlugin.loader,
-          //{ loader: 'style-loader'},
           { loader: 'css-loader' },
           {
             loader: 'postcss-loader',

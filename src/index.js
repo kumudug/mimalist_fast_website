@@ -1,7 +1,5 @@
 /*eslint no-unused-vars: ["error", { "varsIgnorePattern": "mdc" }]*/
 
-
-
 import {MDCTopAppBar} from '@material/top-app-bar';
 import {MDCRipple} from '@material/ripple';
 
@@ -16,8 +14,6 @@ const mdcTopAppBar = new MDCTopAppBar(topAppBarElement);
 import mdcIcon from './res/icon.png';
 
 import './app.scss';
-
-//import mdcHtml from './index.html';
 
 
 
