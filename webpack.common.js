@@ -7,7 +7,8 @@ const ESLintPlugin = require('eslint-webpack-plugin');
 
 module.exports = {
   entry: {
-    index: './src/index.js',
+    home: './src/home/home.js',
+    app: './src/app.js',
     second: './src/second_page.js'
   },
   devServer: {
@@ -18,18 +19,25 @@ module.exports = {
     new WebpackManifestPlugin({}),
     new HtmlWebpackPlugin({
       title: 'coding-mayhem',
-      template: 'src/index.html',
+      template: 'src/home/home.html',
       inject: true,
-      chunks: ['index'],
+      chunks: ['home', 'app'],
       filename: 'index.html'
     }),
-    new HtmlWebpackPlugin({
-      title: 'coding-mayhem-second',
-      template: 'src/second_page.html',
-      inject: true,
-      chunks: ['second'],
-      filename: 'second_page.html'
-    }),
+    // new HtmlWebpackPlugin({
+    //   title: 'coding-mayhem',
+    //   template: 'src/index.html',
+    //   inject: true,
+    //   chunks: ['index'],
+    //   filename: 'index2.html'
+    // }),
+    // new HtmlWebpackPlugin({
+    //   title: 'coding-mayhem-second',
+    //   template: 'src/second_page.html',
+    //   inject: true,
+    //   chunks: ['second'],
+    //   filename: 'second_page.html'
+    // }),
     new MiniCssExtractPlugin({
       filename: '[name].[contenthash].css',
     }),

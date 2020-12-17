@@ -1,7 +1,28 @@
+@use "@material/theme" with (
+  $primary: #FFFFFF,
+  //$primary_variant: #AEAEB1,
+  $secondary: #2A2931,
+  //$secondary_variant: #1D1D23,
+
+  $surface: #373741,
+  $background: #33333D,
+  $error: #b00020,
+
+  $on_primary: #2A2931,
+  $on_secondary: #ffffff,
+  //$on_background: #ffffff,
+  $on_surface: #ffffff,
+  $on_error: #ffffff,
+
+  //$status_bar: #27272F,
+);
+
 @use "@material/icon-button";
 @use "@material/top-app-bar/mdc-top-app-bar";
+@use "@material/button";
 
 @include icon-button.core-styles;
+@include button.core-styles;
 
 @font-face {
   font-family: 'Langar';
@@ -9,3 +30,4 @@
   font-weight: 400;
   font-style: normal;
 }
+
