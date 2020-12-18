@@ -21,15 +21,3 @@
 @include button.core-styles;
 @include card.core-styles;
 @include theme.core-styles;
-
-@font-face {
-  font-family: 'Langar';
-  src: url('./res/Langar-Regular.ttf') format('truetype');
-  font-weight: 400;
-  font-style: normal;
-}
-
-body {
-  @extend .mdc-theme--secondary-bg;
-  font-family: 'Langar';
-}

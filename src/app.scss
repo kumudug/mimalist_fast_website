@@ -1,9 +1,15 @@
-@import "_common.scss";
+@import "_material.scss";
+
+@font-face {
+  font-family: 'Langar';
+  src: url('./res/Langar-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
 
 body {
-  //color: $mdc-theme-secondary;
+  @extend .mdc-theme--secondary-bg;
   font-family: 'Langar';
-  //background-color: $surface;
 }
 
 // .container {
