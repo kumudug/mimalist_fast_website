@@ -20,9 +20,15 @@
 @use "@material/icon-button";
 @use "@material/top-app-bar/mdc-top-app-bar";
 @use "@material/button";
+@use "@material/card";
 
 @include icon-button.core-styles;
 @include button.core-styles;
+@include card.core-styles;
+
+@import '@material/theme/_theme-color.scss';
+
+$secondary: #2A2931;
 
 @font-face {
   font-family: 'Langar';
@@ -31,3 +37,8 @@
   font-style: normal;
 }
 
+body {
+  //color: $mdc-theme-secondary;
+  font-family: 'Langar';
+  background-color: $secondary;
+}

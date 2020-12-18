@@ -40,9 +40,3 @@
 // // $mdc-theme-on-error: #ffffff;
 // // $mdc-theme-on-surface: #000000;
 
-
-@use "@material/theme" with (
-  $primary: black,
-  $secondary: #76ff03,
-  $background: #fff,
-);

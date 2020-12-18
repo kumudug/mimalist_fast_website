@@ -48,8 +48,12 @@
   },
   "dependencies": {
     "@material/button": "^8.0.0",
+    "@material/card": "^8.0.0",
     "@material/icon-button": "^8.0.0",
     "@material/ripple": "^8.0.0",
-    "@material/top-app-bar": "^8.0.0"
+    "@material/theme": "^8.0.0",
+    "@material/top-app-bar": "^8.0.0",
+    "install": "^0.13.0",
+    "npm": "^6.14.9"
   }
 }
