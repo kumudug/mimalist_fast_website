@@ -1,8 +1,6 @@
 @use "@material/theme" with (
   $primary: #FFFFFF,
-  //$primary_variant: #AEAEB1,
   $secondary: #2A2931,
-  //$secondary_variant: #1D1D23,
 
   $surface: #373741,
   $background: #33333D,
@@ -10,11 +8,8 @@
 
   $on_primary: #2A2931,
   $on_secondary: #ffffff,
-  //$on_background: #ffffff,
   $on_surface: #ffffff,
   $on_error: #ffffff,
-
-  //$status_bar: #27272F,
 );
 
 @use "@material/icon-button";
@@ -25,10 +20,7 @@
 @include icon-button.core-styles;
 @include button.core-styles;
 @include card.core-styles;
-
-@import '@material/theme/_theme-color.scss';
-
-$secondary: #2A2931;
+@include theme.core-styles;
 
 @font-face {
   font-family: 'Langar';
@@ -38,7 +30,6 @@ $secondary: #2A2931;
 }
 
 body {
-  //color: $mdc-theme-secondary;
+  @extend .mdc-theme--secondary-bg;
   font-family: 'Langar';
-  background-color: $secondary;
 }
