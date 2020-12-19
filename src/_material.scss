@@ -4,11 +4,11 @@
   https://github.com/material-components/material-components-web/blob/5cb7dfde6990fe1f73605fd7f64b8239bd8ba78d/packages/mdc-theme/_theme-color.scss#L113*/
   $primary: my-colors.$primary, 
   // $on_primary: #2A2931,
-  $secondary: my-colors.$secondary, //Blue Gray-400 S-Dark
+  $secondary: my-colors.$secondary, 
   // $on_secondary: #ffffff,
-  $background: my-colors.$background, //Blue Gray-900 Dark
+  $background: my-colors.$background, 
 
-  // $surface: #373741,
+  $surface: my-colors.$surface,
   // $on_surface: #ffffff,
   
   // $error: #b00020,
