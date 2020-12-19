@@ -1,21 +1,24 @@
+@use '_colors.scss' as my-colors;
 @use "@material/theme" with (
-  $primary: #FFFFFF,
-  $secondary: #2A2931,
+  /* Used by looking at the material theme code in git
+  https://github.com/material-components/material-components-web/blob/5cb7dfde6990fe1f73605fd7f64b8239bd8ba78d/packages/mdc-theme/_theme-color.scss#L113*/
+  $primary: my-colors.$primary, 
+  // $on_primary: #2A2931,
+  $secondary: my-colors.$secondary, //Blue Gray-400 S-Dark
+  // $on_secondary: #ffffff,
+  $background: my-colors.$background, //Blue Gray-900 Dark
 
-  $surface: #373741,
-  $background: #33333D,
-  $error: #b00020,
-
-  $on_primary: #2A2931,
-  $on_secondary: #ffffff,
-  $on_surface: #ffffff,
-  $on_error: #ffffff,
+  // $surface: #373741,
+  // $on_surface: #ffffff,
+  
+  // $error: #b00020,
+  // $on_error: #ffffff,
 );
 
 @use "@material/icon-button";
 @use "@material/button";
 @use "@material/card";
-@import "@material/top-app-bar/mdc-top-app-bar";
+@use "@material/top-app-bar/mdc-top-app-bar";
 
 @include icon-button.core-styles;
 @include button.core-styles;
